@@ -12,3 +12,18 @@ function sumMix(x) {
 // transform everything to nums
 // return sum of values = num
 //Example sumMix([9, 3, '7', '3']) //22
+
+const binaryArrayToNumber = (array) => {
+  //   convert each digit x * 2^n
+  //   where n == array.length - i
+  let sum;
+  for (let i = 0; i <= array.length; i++) {
+    if (array[i] == 1) {
+      sum += Number(array[i]) * 2 ** (array.length - (i + 1));
+      console.log(sum);
+    }
+  }
+  return sum;
+};
+
+binaryArrayToNumber([0, 0, 0, 1]);
