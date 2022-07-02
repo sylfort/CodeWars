@@ -1,5 +1,4 @@
 // Maximum Gap (Array Series #4)
-
 export function maxGap(nums: number[]): number {
   nums.sort((a, b) => a - b);
   let diff: number[] = [];
