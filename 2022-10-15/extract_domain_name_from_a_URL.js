@@ -1,3 +1,5 @@
+// Extract the domain name from a URL
+
 function domainName(url) {
   // replace http:// && https:// && www.
   let partsArr = url
