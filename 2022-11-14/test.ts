@@ -7,7 +7,5 @@ export function divisors(n: number) {
     }
   }
 
-  return divisorsArr;
+  return divisorsArr.length;
 }
-
-console.log(divisors(5));
